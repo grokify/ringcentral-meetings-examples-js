@@ -6,6 +6,9 @@
 |-----|----------|
 | Get Meeting User Settings | `GET extension/meeting/user-settings` |
 | Get Locked Meeting Settings | `GET account/meeting/locked-settings` |
+| Get Meeting Service Info | `GET extension/meeting/service-info` |
+
+
 
 ## Get Meeting User Settings
 
