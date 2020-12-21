@@ -2,9 +2,10 @@
 
 ## Overview
 
-| API | Endpoint |
+| API | Endpoint Abbreviation |
 |-----|----------|
-| Get Meeting User Settings | `extension/meeting/user-settings` |
+| Get Meeting User Settings | `GET extension/meeting/user-settings` |
+| Get Locked Meeting Settings | `GET account/meeting/locked-settings` |
 
 ## Get Meeting User Settings
 
@@ -44,6 +45,37 @@
   "telephony":{
     "thirdPartyAudio":false,
     "audioConferenceInfo":""
+  }
+}
+```
+
+## Get Locked Meeting Settings
+
+`GET /restapi/v1.0/account/{accountId}/meeting/locked-settings`
+
+```json
+{
+  "scheduleMeeting":{
+    "startHostVideo":false,
+    "startParticipantsVideo":false,
+    "audioOptions":false,
+    "allowJoinBeforeHost":false,
+    "requirePasswordForSchedulingNewMeetings":false,
+    "requirePasswordForInstantMeetings":false,
+    "requirePasswordForPmiMeetings":false,
+    "enforceLogin":false
+  },
+  "recording":{
+    "localRecording":false,
+    "cloudRecording":true,
+    "autoRecording":false,
+    "cloudRecordingDownload":false,
+    "hostDeleteCloudRecording":false,
+    "accountUserAccessRecording":false,
+    "autoDeleteCmr":false
+  },
+  "telephony":{
+    "thirdPartyAudio":false
   }
 }
 ```
