@@ -82,3 +82,87 @@
   }
 }
 ```
+
+### Get Meeting Service Info
+
+`GET /restapi/v1.0/account/{accountId}/extension/{extensionId}/meeting/service-info`
+
+```json
+{
+  "uri":"http://platform.ringcentral.com/restapi/v1.0/account/11111111/extension/22222222/meeting/service-info",
+  "supportUri":"http://success.ringcentral.com",
+  "intlDialInNumbersUri":"https://meetings.ringcentral.com/teleconference",
+  "domain":"rcm.ringcentral.com",
+  "externalUserInfo":{
+    "userId":"3333333333-44444444444",
+    "accountId":"11111111",
+    "userType":2,
+    "userToken":"5555555555555555",
+    "hostKey":"666666",
+    "personalMeetingId":"7777777",
+    "usePmiForInstantMeetings":false
+  },
+  "dialInNumbers":[
+    {
+      "phoneNumber":"+14705550100",
+      "formattedNumber":"(470) 555-0100",
+      "location":"US East",
+      "country":{
+        "uri":"http://platform.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "id":"1",
+        "name":"United States",
+        "isoCode":"US",
+        "callingCode":"1"
+      }
+    },
+    {
+      "phoneNumber":"+14695550100",
+      "formattedNumber":"(469) 555-0100",
+      "location":"US South",
+      "country":{
+        "uri":"http://platform.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "id":"1",
+        "name":"United States",
+        "isoCode":"US",
+        "callingCode":"1"
+      }
+    },
+    {
+      "phoneNumber":"+17735550100",
+      "formattedNumber":"(773) 555-0100",
+      "location":"US North",
+      "country":{
+        "uri":"http://platform.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "id":"1",
+        "name":"United States",
+        "isoCode":"US",
+        "callingCode":"1"
+      }
+    },
+    {
+      "phoneNumber":"+16235550100",
+      "formattedNumber":"(623) 555-0100",
+      "location":"US West",
+      "country":{
+        "uri":"http://platform.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "id":"1",
+        "name":"United States",
+        "isoCode":"US",
+        "callingCode":"1"
+      }
+    },
+    {
+      "phoneNumber":"+17205550100",
+      "formattedNumber":"(720) 555-0100",
+      "location":"US Central",
+      "country":{
+        "uri":"http://platform.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "id":"1",
+        "name":"United States",
+        "isoCode":"US",
+        "callingCode":"1"
+      }
+    }
+  ]
+}
+```
